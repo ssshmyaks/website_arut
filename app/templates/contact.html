@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Свяжитесь с нами</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contact.html">Связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h2>Контактная информация</h2>
+                <p>Мы всегда готовы помочь вам в реализации вашего проекта.</p>
+                <p>Пожалуйста, заполните форму ниже.</p>
+                <form action="#" method="post">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Подготовил Артур Аветисян. Все права защищены. Все услуги и портфолио вымышлены</p>
+        </div>
+    </footer>
+</body>
+</html>

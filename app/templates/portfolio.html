@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Портфолио</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contact.html">Связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <h2>Наши Работы</h2>
+                <div class="portfolio-item">
+                    <h3>Бизнес помощник</h3>
+                    <p>Бот-счетчик отчетов по заказам с подсчетом зарплаты.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Бот службы поддержки</h3>
+                    <p>Разработка бота для автоматизации взаимодействия с клиентами и оперативного ответа на вопросы.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Телеграм магазин одежды</h3>
+                    <p>Бот с встроенной логистикой, системой доставки и платежной системой.</p>
+                </div>
+                <h2>В процессе</h2>
+                <div class="portfolio-item">
+                    <h3>Мобильное приложение для работников ресторана X</h3>
+                    <p>Приложение для телефона, которое облегчает жизнь официантам и администраторам зала X ресторана</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Сайт для управления VPS</h3>
+                    <p>Разрабатывается сайт для облегчения в управлении удаленным сервером.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Подготовил Артур Аветисян. Все права защищены. Все услуги и портфолио вымышлены</p>
+        </div>
+    </footer>
+</body>
+</html>

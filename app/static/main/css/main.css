@@ -1,9 +1,151 @@
-body {
-    background: #1c1c1c;
-    text-shadow: .7px 1px 1px pink;
-    margin: 0;
+@font-face {
+    font-family: "TTFirsNeue";
+    src: url("fonts/TTFirsNeue-Medium.ttf") format("truetype");
 }
 
-h3 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: TTFirsNeue, Arial;
+    line-height: 1.6;
+    background: #000000;
+    color: #0D3B66;
+}
+
+header {
+    background-color: #8E1AB9;
     color: #ffffff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container h2 {
+    color: #ffffff
+}
+
+main .container h2 {
+    color: #8E1AB9
+}
+
+main .container form {
+    color: #8E1AB9
+}
+
+main .container p {
+    color: #ffffff
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.intro, .services, .contact, .portfolio {
+    padding: 2rem 0;
+}
+
+.service-card {
+    background: #333130;
+    color: #ffffff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform .4s ease;
+}
+
+.service-card h3 {
+    color: #8E1AB9;
+}
+
+.service-card:hover {
+    transform: scale(1.01);
+}
+
+.portfolio-item {
+    background: #403E3D;
+    color: #ffffff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform .4s ease;
+}
+
+.portfolio-item h3 {
+    color: #8E1AB9;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.01);
+}
+
+footer {
+    background-color: #991EF7;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #8E1AB9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+form button:hover {
+    transform: scale(1.01);
 }
