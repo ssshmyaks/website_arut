@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Связаться</title>
+    <title>ArmenDev</title>
+    <link rel="stylesheet" href="../static/main/css/fontawesome/css/all.css">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Свяжитесь с нами</h1>
+            <h1>ArmenDev</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
@@ -23,22 +24,15 @@
 
     <main>
         <section class="contact">
-            <div class="container">
-                <h2>Контактная информация</h2>
+            <div class="podpis">
+                <h2>Связаться с нами</h2>
                 <p>Мы всегда готовы помочь вам в реализации вашего проекта.</p>
-                <p>Пожалуйста, заполните форму ниже.</p>
-                <form action="#" method="post">
-                    <label for="name">Имя</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Электронная почта</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Сообщение</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Отправить</button>
-                </form>
+                <h3>Полезные ссылки</h3>
+                <ul class="Socials">
+                    <a href="https://github.com/ArmenDev"><li><i class="fa-brands fa-github"></i> Гитхаб</li></a>
+                    <a href=""><li><i class="fa-brands fa-youtube"></i> Ютуб Канал</li></a>
+                    <a href="https://t.me/ARMENDEV"><li><i class="fa-solid fa-paper-plane"></i> Телеграм</li></a>
+                </ul>
             </div>
         </section>
     </main>

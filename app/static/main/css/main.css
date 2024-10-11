@@ -12,13 +12,13 @@
 body {
     font-family: TTFirsNeue, Arial;
     line-height: 1.6;
-    background: #000000;
-    color: #0D3B66;
+    background: #0c73fe;
+    color: #000000;
 }
 
 header {
-    background-color: #8E1AB9;
-    color: #ffffff;
+    background-color: #0c73fe;
+    color: #ffe3ff;
     padding: 1rem 0;
 }
 
@@ -29,19 +29,19 @@ header .container {
 }
 
 header .container h2 {
-    color: #ffffff
+    color: #ffe3ff
 }
 
 main .container h2 {
-    color: #8E1AB9
+    color: #ffe3ff
 }
 
 main .container form {
-    color: #8E1AB9
+    color: #0c73fe
 }
 
 main .container p {
-    color: #ffffff
+    color: #000000
 }
 
 nav ul {
@@ -50,13 +50,29 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 2rem;
+    margin-left: 3rem;
+    font-weight: bold;
+    transition: background .9s ease;
+    height: 28px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    background-color: #ffe3ff;
+    border: none;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background-color: #fa742d;
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #0c73fe;
     text-decoration: none;
-    font-weight: bold;
+}
+
+nav ul li a:hover { 
+    color: #ffe3ff;
 }
 
 .main {
@@ -68,13 +84,34 @@ nav ul li a {
     margin: auto;
 }
 
+.podpis {
+    width: 60%;
+    margin: auto;
+    color: #ffe3ff;
+}
+
+.podpis ul {
+    list-style: none;
+}
+
+.podpis ul li {
+    display: flexbox;
+    color: #ffe3ff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.podpis ul a {
+    text-decoration: none;
+}
+
 .intro, .services, .contact, .portfolio {
     padding: 2rem 0;
 }
 
 .service-card {
-    background: #333130;
-    color: #ffffff;
+    background: #ffe3ff;
+    color: #000000;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 5px;
@@ -82,7 +119,7 @@ nav ul li a {
 }
 
 .service-card h3 {
-    color: #8E1AB9;
+    color: #0c73fe;
 }
 
 .service-card:hover {
@@ -90,8 +127,8 @@ nav ul li a {
 }
 
 .portfolio-item {
-    background: #403E3D;
-    color: #ffffff;
+    background: #ffe3ff;
+    color: #000000;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 5px;
@@ -99,7 +136,7 @@ nav ul li a {
 }
 
 .portfolio-item h3 {
-    color: #8E1AB9;
+    color: #0c73fe;
 }
 
 .portfolio-item:hover {
@@ -107,8 +144,8 @@ nav ul li a {
 }
 
 footer {
-    background-color: #991EF7;
-    color: #ffffff;
+    background-color: #ffe3ff;
+    color: #000000;
     text-align: center;
     padding: 1rem 0;
     margin-top: 5rem;
@@ -138,8 +175,8 @@ form input, form textarea {
 form button {
     margin-top: 1rem;
     padding: 0.75rem;
-    background-color: #8E1AB9;
-    color: #ffffff;
+    background-color: #ffe3ff;
+    color: #0c73fe;
     border: none;
     border-radius: 5px;
     cursor: pointer;
