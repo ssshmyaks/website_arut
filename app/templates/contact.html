@@ -27,12 +27,16 @@
             <div class="podpis">
                 <h2>Связаться с нами</h2>
                 <p>Мы всегда готовы помочь вам в реализации вашего проекта.</p>
-                <h3>Полезные ссылки</h3>
-                <ul class="Socials">
-                    <a href="https://github.com/ArmenDev"><li><i class="fa-brands fa-github"></i> Гитхаб</li></a>
-                    <a href=""><li><i class="fa-brands fa-youtube"></i> Ютуб Канал</li></a>
-                    <a href="https://t.me/ARMENDEV"><li><i class="fa-solid fa-paper-plane"></i> Телеграм</li></a>
-                </ul>
+                <form id="contact">
+                    {% csrf_token %}
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" required>
+                    <label for="msg">Сообщение</label>
+                    <input type="text" id="msg" required>
+                    <button form="contact">Отправить</button>      
+                </form>
             </div>
         </section>
     </main>
